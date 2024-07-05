@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>World Clock</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Clock</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- NAV BAR-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Welcome to World Clock</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+    <!-- HEADING  -->
+  <div class="container my-3 ">
+  </div>
+  <h1 class="text-center">Welcome to World Clock</h1>
+  <main class="my-3">
+
+   <!-- CARD-1 -->
+   <div class="row row-cols-1 row-cols-md-3 mb-3 text-centre">
+    <div class="col-md-4"> <!-- Increased width to 4 columns -->
+        <div class="card mb-4 rounded-3 shadow-sm" style="width: 25rem;"> <!-- Increased width to 25rem -->
+    <div class="card-header py-3">
+      <h4 class="text-center my-0 font-weight-normal"> Pakistan <i class="bi bi-clock"></i></h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title" id="pakistan"></h1>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>10 users included</li>
+        <li>2 GB of storage</li>
+        <li>Email support</li>
+        <li>Help center access</li>
+      </ul>
+      <button type="button" class="btn btn-lg btn-block btn-primary" onclick="showMoreInfo('pakistan-info')">More about this zone</button>
+      <div id="pakistan-info" style="display:none">
+        <p>Pakistan is a country in South Asia...</p>
+        <p>Capital: Islamabad</p>
+        <p>Population: 216 million</p>
+      </div>
+  </div>
+</div>
+
+  <!-- CARD-2 -->
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-centre">
+    <div class="col-md-4"> <!-- Increased width to 4 columns -->
+        <div class="card mb-4 rounded-3 shadow-sm" style="width: 25rem;"> <!-- Increased width to 25rem -->
+    <div class="card-header">
+      <h4 class=" text-center my-0 font-weight-normal">United States <i class=" font-center bi bi-clock"></i></h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title" id="usa"></h1>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>20 users included</li>
+        <li>10 GB of storage</li>
+        <li>Priority email support</li>
+        <li>Help center access</li>
+      </ul>
+      <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="showMoreInfo('usa-info')">More about this zone</button>
+      <div id="usa-info" style="display:none">
+        <p>The United States is a country in North America...</p>
+        <p>Capital: Washington, D.C.</p>
+        <p>Population: 331 million</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD-3 -->
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-centre">
+    <div class="col-md-4"> <!-- Increased width to 4 columns -->
+        <div class="card mb-4 rounded-3 shadow-sm" style="width: 25rem;"> <!-- Increased width to 25rem -->
+    <div class="card-header">
+      <h4 class="text-center my-0 font-weight-normal">China <i class="bi bi-clock"></i></h4>
+    </div>
+    <div class="card-body">
+      <h1 class="card-title pricing-card-title" id="china"></h1>
+      <ul class="list-unstyled mt-3 mb-4">
+        <li>30 users included</li>
+        <li>15 GB of storage</li>
+        <li>Phone and email support</li>
+        <li>Help center access</li>
+      </ul>
+      <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="showMoreInfo('china-info')">More about this zone</button>
+      <div id="china-info" style="display:none">
+        <p>China is a country in East Asia...</p>
+        <p>Capital: Beijing</p>
+        <p>Population: 1.44 billion</p>
+    </div>
+  </div>
+</div>
+
+<!-- CARD-4 -->
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-centre">
+  <div class="col-md-4"> <!-- Increased width to 4 columns -->
+      <div class="card mb-4 rounded-3 shadow-sm" style="width: 25rem;"> <!-- Increased width to 25rem -->
+  <div class="card-header">
+    <h4 class="text-center my-0 font-weight-normal">UAE<i class="bi bi-clock"></i></h4>
+  </div>
+  <div class="card-body">
+    <h1 class="card-title pricing-card-title" id="uae"></h1>
+    <ul class="list-unstyled mt-3 mb-4">
+      <li>30 users included</li>
+      <li>15 GB of storage</li>
+      <li>Phone and email support</li>
+      <li>Help center access</li>
+    </ul>
+    <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="showMoreInfo('uae-info')">More about this zone</button>
+    <div id="uae-info" style="display:none">
+      <p>The United Arab Emirates is situated in the Middle East, bordering the Gulf of Oman and the Persian Gulf, between Oman and Saudi Arabia...</p>
+      <p>Capital: Abu Dhabi</p>
+      <p>Population: 
+        - UAE nationals: around 1.5 million
+        - Expatriates: around 8 million (mostly from India, Pakistan, Bangladesh, Philippines, and other Asian countries)</p>
+  </div>
+</div>
+</div>
+
+<div class="alarm-container">
+<label for="appt">Select a time:</label>
+<input type="time" id="alarm" name="alarm">
+</div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script>
+      function showMoreInfo(id) {
+        const element = document.getElementById(id);
+        element.style.display = element.style.display === 'none' ? 'block' : 'none';
+      }
+    </script>
+  
+      <script>
+  const pakistanTime = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Karachi',
+    hour12: true,
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit'
+  });
+  const usaTime = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'America/New_York',
+    hour12: true,
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit'
+  });
+  const chinaTime = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Shanghai',
+    hour12: true,
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit'
+  });
+  const uaeTime = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Dubai',
+    hour12: true,
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit'
+  });
+  const alarmTime = new Intl.DateTimeFormat('en-US', {
+    hour12: true,
+    hour: '2-digit',
+    minute: '2-digit'
+  });
+  setInterval(() => {
+    const pakistanTimeStr = pakistanTime.format(new Date());
+    const usaTimeStr = usaTime.format(new Date());
+    const chinaTimeStr = chinaTime.format(new Date());
+    const uaeTimeStr = uaeTime.format(new Date());
+    document.getElementById('pakistan').textContent = pakistanTimeStr;
+    document.getElementById('usa').textContent = usaTimeStr;
+    document.getElementById('china').textContent = chinaTimeStr;
+    document.getElementById('uae').textContent = uaeTimeStr;
+    const currentDateTime = new Date();
+    const alarmDateTime = new Date(currentDateTime);
+    const alarmInput = document.getElementById('alarm').value;
+    const alarmHour = parseInt(alarmInput.split(':')[0], 10);
+    const alarmMinute = parseInt(alarmInput.split(':')[1], 10);
+    alarmDateTime.setHours(alarmHour);
+    alarmDateTime.setMinutes(alarmMinute);
+    alarmDateTime.setSeconds(0);
+    const currentFormattedTime = alarmTime.format(currentDateTime);
+    if (currentDateTime.getTime() === alarmDateTime.getTime()) {
+      alert("Alarm is ringing!");
+      let audiourl = "bedside-clock-alarm-95792.mp3";
+      var audio = new Audio(audiourl);
+      audio.load();
+      audio.addEventListener('canplay', () => {
+        audio.play();
+      });
+    }
+  }, 1000);
+</script>
+    </script>
+   
+  
+     <div class="clock-container">
+      <div class="clock">
+
+          <div class="circle" style="--clr:#04fc43;" id="sc"><i></i></div>
+          <div class="circle circle2" style="--clr:#fee800;" id="mn"><i></i></div>
+          <div class="circle circle3" style="--clr:#ff2972;" id="hr"><i></i></div>
+
+          <span style="--i:1;"><b>1</b></span>
+          <span style="--i:2;"><b>2</b></span>
+          <span style="--i:3;"><b>3</b></span>
+          <span style="--i:4;"><b>4</b></span>
+          <span style="--i:5;"><b>5</b></span>
+          <span style="--i:6;"><b>6</b></span>
+          <span style="--i:7;"><b>7</b></span>
+          <span style="--i:8;"><b>8</b></span>
+          <span style="--i:9;"><b>9</b></span>
+          <span style="--i:10;"><b>10</b></span>
+          <span style="--i:11;"><b>11</b></span>
+          <span style="--i:12;"><b>12</b></span>
+      </div>
+
+      <div id="time">
+          <div id="hours" style="--clr:#04fc43;">00</div>
+          <div id="minutes"  style="--clr:#fee800;">00</div>
+          <div id="seconds" style="--clr:#ff2972;">00</div>
+          <div id="ampm">AM</div>
+      </div>
+  </div>
+  <script>
+      let hr = document.querySelector('#hr');
+      let mn = document.querySelector('#mn');
+      let sc = document.querySelector('#sc');
+
+      setInterval(() =>{
+        let day = new Date();
+  let hh = day.getHours() * 30 + day.getMinutes() * 0.5; 
+  let mm = day.getMinutes() * 6 + day.getSeconds() * 0.1; 
+  let ss = day.getSeconds() * 6;
+  hr.style.transform = `rotateZ(${hh}deg)`;
+  mn.style.transform = `rotateZ(${mm}deg)`;
+  sc.style.transform = `rotateZ(${ss}deg)`;
+}, 1000);
+
+
+  </script>
+  </body>
+
+</html>
